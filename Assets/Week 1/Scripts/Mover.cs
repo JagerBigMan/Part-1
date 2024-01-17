@@ -19,7 +19,7 @@ public class Mover : MonoBehaviour
     {
         float direction = Input.GetAxis("Horizontal");
         transform.Translate(direction * speed * Time.deltaTime, 0, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(missilePrefab, spawn.position, spawn.rotation);
         }

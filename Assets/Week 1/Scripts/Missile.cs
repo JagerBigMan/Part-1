@@ -13,7 +13,7 @@ public class Missile : MonoBehaviour
 
     void Update()
     {
-        //transform.Translate(speed * Time.deltaTime, 0, 0);
+        transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 
     private void FixedUpdate()

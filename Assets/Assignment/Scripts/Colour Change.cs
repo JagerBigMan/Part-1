@@ -12,4 +12,16 @@ public class ColourChange : MonoBehaviour
         spriteRenderer.color = initialColor;
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ChangePlayerColor(triggerColor);
+        }
+    }
+
+    private void ChangePlayerColor(Color newColor)
+    {
+        spriteRenderer.color = newColor;
+    }
 }

@@ -15,13 +15,6 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer(horizontalInput, verticalInput);
     }
 
-    void MovePlayer(float horizontalInput, float verticalInput)
-    {
-        // Calculate movement direction
-        Vector3 moveDirection = new Vector3(horizontalInput, verticalInput, 0f);
 
-        // Move the player based on input
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
-    }
 
 }
